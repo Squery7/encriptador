@@ -4,22 +4,6 @@
 recibir un mensaje y que a partir de este genere un mensaje de salida encriptado utilizando 
 ciertas claves.
 
-#### Palabras clave:
-- JavaScript
-- HTML
-- CSS
-- Oracle
-- Alura
-- Encriptación
-- Desencriptación
-
-| Tarea  | Estado  |  
-|:------:|:----------:|
-| Encriptar | Completado |
-| Desencriptar |Completado |
-| Copiar texto |Completado |
-| Limpiar texto |Completado |
-
 #### Restricciones:
 >
 - La letra "e" es convertida para "enter"
@@ -45,3 +29,19 @@ gaitober" => "gato"
 #### Extras:
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
+| Tarea  | Estado  |  
+|:------:|:----------:|
+| Encriptar | Completado |
+| Desencriptar |Completado |
+| Copiar texto |Completado |
+| Limpiar texto |Completado |
+
+#### Palabras clave:
+- JavaScript
+- HTML
+- CSS
+- Oracle
+- Alura
+- Encriptación
+- Desencriptación
