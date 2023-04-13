@@ -8,16 +8,24 @@
 
 /* Body */
 body {
-    background-color: #b2e8fc; 
+    background-color: #5c6062;
     height: 900px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Header */
 .header {
+    background-color: #414445;
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 5px;
+    margin: 10px; */
 }
 
 /* Nav */
@@ -43,14 +51,14 @@ nav li {
 .nav a {
     text-decoration: none;
     font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Courier New', Courier, monospace;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
 /* Main */
 .main {
-    height: 70%;
+    height: 80%;
     position: relative;
 }
 
@@ -69,12 +77,15 @@ nav li {
 }
 
 .area textarea {
-    background-color: #bfe9f8;
+    background-color: #414445;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     border: none;
     resize: none;
     font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    padding: 5px;
+    margin: 10px;
 }
 
 .area textarea:focus {
@@ -93,58 +104,62 @@ nav li {
 .botones button {
     height: 50px;
     width: 250px;
-    margin: 0 10px;
-    border-radius: 1em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
+    background-color: #414445;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 
+    /* Espacio interno del botón */
+    padding: 10px 20px;
+
+    /* Quitamos el borde */
+    border: none;
+
+    /* Cambiamos el cursor al pasar el ratón sobre el botón */
     cursor: pointer;
-    animation-name: move-and-color;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
+    /* Agregamos una transición */
+    transition: transform 0.2s ease;
 }
 
-@keyframes move-and-color {
-    0% {
-        background-color: rgb(131, 251, 241);
-        transform: translateX(0);
-    }
-
-    50% {
-        background-color: #a9fef7;
-        transform: translateX(5px);
-    }
-
-    100% {
-        background-color: #e2fffd;
-        transform: translateX(0);
-    }
+.botones button:active {
+    /* Movemos el botón hacia abajo */
+    transform: translateY(4px);
+    background-color: #5c6062;
 }
 
-textarea::placeholder{
-    color: rgb(81, 139, 187);
+textarea::placeholder {
+    color: #000000;
+    opacity: 0.5;
 }
 
 /* Aside */
 .aside {
-    
     width: 50%;
     height: 100%;
     float: right;
 }
 
-
 /* Footer */
 .footer {
+    background-color: #414445;
     position: fixed;
     bottom: 0;
-    left: 0;
+    /* left: 0; */
     width: 100%;
-    height: 15%;
+    height: 10%;
     text-align: center;
+    /* padding: 5px;
+    margin: 10px; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Contacto */
 .contact {
     width: 50%;
     height: 100%;
@@ -156,6 +171,7 @@ textarea::placeholder{
     padding: 0;
 }
 
+/* Siguenos */
 .siguenos {
     width: 50%;
     height: 100%;
@@ -165,4 +181,13 @@ textarea::placeholder{
 .siguenos ul {
     list-style: none;
     padding: 0;
+}
+
+.siguenos ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer p {
+    font-size: 25px;
 }
