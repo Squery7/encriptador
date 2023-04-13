@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: #b2e8fc; 
+    height: 900px;
+}
+
+/* Header */
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+.nav {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* Main */
+.main {
+    height: 70%;
+    position: relative;
+}
+
+/* Section */
+.section {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.area {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area textarea {
+    background-color: #bfe9f8;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.area textarea:focus {
+    outline: none;
+}
+
+.botones {
+    width: 50%;
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+
+.botones button {
+    height: 50px;
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+
+    cursor: pointer;
+    animation-name: move-and-color;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-and-color {
+    0% {
+        background-color: rgb(131, 251, 241);
+        transform: translateX(0);
+    }
+
+    50% {
+        background-color: #a9fef7;
+        transform: translateX(5px);
+    }
+
+    100% {
+        background-color: #e2fffd;
+        transform: translateX(0);
+    }
+}
+
+textarea::placeholder{
+    color: rgb(81, 139, 187);
+}
+
+/* Aside */
+.aside {
+    
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.contact {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.siguenos {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.siguenos ul {
+    list-style: none;
+    padding: 0;
+}
