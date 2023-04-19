@@ -11,11 +11,24 @@ const diccionario_encriptar = {
     "ufat": "u"
 }
 
-function copyToClipboard() {
+
+function copyToClipboard(elemento) {
     var textarea = document.getElementById("myTextArea");
     textarea.select();
+    if (textarea.value == "") {
+        toastr.success("No hay nada que copiar.")
+        return;
+    }
+
     document.execCommand("copy");
-    toastr.success('El texto se ha copiado al portapapeles.');
+
+    const posicion = elemento.getBoundingClientRect();
+    const mensaje = 'El texto se ha copiado al portapapeles.';
+
+    toastr.success(mensaje, '', {
+        positionClass: 'toast-top-center',
+        target: [posicion.left + (posicion.width / 2), posicion.top]
+    });
 }
 
 function encriptar() {
@@ -23,7 +36,9 @@ function encriptar() {
     if (mensaje == "") {
         toastr.success('Ingrese un mensaje.');
     } else {
-        mensaje = mensaje.toLowerCase();
+        //mensaje = mensaje.toLowerCase();
+
+        verificarMinusculas(mensaje);
         let salida = mensaje.replace(/[aeiou]/g, function (match) {
             return diccionario_encriptar[match];
         });
@@ -88,3 +103,13 @@ setInterval(escribirPlaceholder_t1, 200);
 setInterval(escribirPlaceholder_t2, 500);
 
 
+function verificarMinusculas(mensaje) {
+    for (let index = 0; index < mensaje.length; index++) {
+        const element = mensaje[index];
+        console.log("Letra: " + element)
+        
+        let letra = "A";
+        let valorAscii = letra.charCodeAt(0);
+        console.log(valorAscii); // muestra 65 en la consola
+    }
+}

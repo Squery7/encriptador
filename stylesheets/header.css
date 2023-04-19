@@ -1,0 +1,32 @@
+/* Header */
+#header {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: xx-large;
+}
+
+#nav {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav h1 {
+    font-size: 2vw;
+    transition: letter-spacing 0.1s ease-in-out;
+}
+
+#nav:hover {
+    transition: 0.2s;
+    letter-spacing: 1em;
+    color: gray;
+}

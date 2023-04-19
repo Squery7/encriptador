@@ -5,67 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
 
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <title>Encriptador</title>
 </head>
 
-<body >
+<body>
 
-    <header class="header">
-        <nav class="nav">
-            <!-- <ul>
-                <li><a href="">Recargar</a></li>
-            </ul> -->
-            <h1>Encriptador</h1>
+    <header id="header">
+        <nav id="nav">
+            <h1>ENCRIPTADOR</h1>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="section">
+    <main id="main">
+        <section id="section">
+
             <div class="area">
-                <textarea id="mensaje" placeholder="Ingrese un mensaje:" rows="23" cols="100"></textarea>
+                <textarea id="mensaje" placeholder="Ingrese un mensaje " rows="23" cols="100"></textarea>
             </div>
+
             <div class="botones">
                 <button onclick="encriptar()">Encriptar</button>
                 <button onclick="desencriptar()">Desencriptar</button>
             </div>
+
         </section>
-        <aside class="aside">
+
+        <aside id="aside">
+
             <div class="area">
-                <textarea id="myTextArea" placeholder="Salida:" rows="23" cols="100" readonly></textarea>
+                <textarea id="myTextArea" placeholder="Salida " rows="23" cols="100" readonly></textarea>
             </div>
+
             <div class="botones">
-                <button onclick="copyToClipboard()">Copiar</button>
+                <button onclick="copyToClipboard(this)">Copiar</button>
                 <button onclick="limpiarDatos()">Limpiar</button>
             </div>
+
         </aside>
+
     </main>
 
-    
-    <footer class="footer">
-        <div class="contact">
+
+    <footer id="footer">
+
+        <div id="contact">
+
             <p>Información de contacto</p>
             <ul>
-                <li>Teléfono: 1234-5678</li>
-                <li>Correo electrónico: diegomrza98@gmail.com</li>
+                <li><span>Teléfono: 1234-5678</span></li>
+                <li><a href="mailto:diegomrza98@gmail.com">Enviar correo electronico</a></li>
             </ul>
+
         </div>
-        <div class="siguenos">
+
+        <div id="sigueme">
+
             <p>Redes Sociales</p>
             <ul>
                 <li><a href="https://www.facebook.com/diego.meza.330">Facebook</a></li>
                 <li><a href="https://twitter.com/diegormeza16">Twitter</a></li>
                 <li><a href="https://www.instagram.com/diego_mrza/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/diego-robles-8b07a3150">LinkedIn</a></li>
             </ul>
+
         </div>
+
     </footer>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-<script src="index.js"></script>
+<script src="/js/index.js"></script>
 
 </html>

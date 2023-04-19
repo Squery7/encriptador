@@ -1,0 +1,124 @@
+/* Main */
+#main {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 50px;
+}
+
+.area {
+    width: 100%;
+    height: 85%;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area textarea {
+    font-size: 2vw;
+    resize: none;
+    border: none;
+    outline: none;
+
+    text-align: center;
+}
+
+.area textarea:focus {
+    transition: 1s;
+    transform: translateY(15px);
+}
+
+.botones {
+    width: 100%;
+    height: 15%;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* */
+.botones button {
+    font-size: 2vw;
+    border-radius: 0.3em;
+    padding: 5px;
+    text-align: center;
+    cursor: grab;
+    outline: none;
+    background-color: #4b5457;
+    border: none;
+    box-shadow: 0 0.29em #999;
+    color: black;
+}
+
+.botones button:hover {
+    background-color: #4f5a5c;
+    color: gray;
+    transition: 0.3s;
+    transform: translateY(1px);
+}
+
+.botones button:active {
+    background-color: #2a282d;
+    box-shadow: 0 5px #666;
+    transition: 0.2s;
+    transform: translateY(4px);
+}
+
+/* */
+
+
+/* Section */
+#section {
+    background-color: #787b7c;
+    width: 50%;
+    height: 100%;
+}
+
+/* Text Area input */
+#mensaje {
+    height: 95%;
+    width: 95%;
+    opacity: 20%;
+
+    border-radius: 20px;
+}
+
+#mensaje:focus {
+    background-color: rgb(44, 55, 51);
+    opacity: 60%;
+}
+
+/* Aside */
+#aside {
+    background-color: #6f7679;
+    width: 50%;
+    height: 100%;
+}
+
+/* Text Area output */
+#myTextArea {
+    height: 95%;
+    width: 95%;
+
+    opacity: 20%;
+
+    border-radius: 20px;
+}
+
+#myTextArea:focus {
+    background-color: rgb(44, 55, 51);
+    opacity: 60%;
+}
