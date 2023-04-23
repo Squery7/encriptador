@@ -94,6 +94,15 @@ function verificarMinusculas(mensaje) {
     return bandera;
 }
 
+// Redirigir a una versión responsiva
+function responsive() {
+    window.location.href = "index2.html";
+}
+
+// Redirigir a una versión no responsiva
+function no_responsive() {
+    window.location.href = "index.html";
+}
 
 // Este codigo genera la animación en los placeholder de los textarea
 
@@ -125,6 +134,6 @@ function escribirPlaceholder_t2() {
     }
 }
 
-setInterval(escribirPlaceholder_t1, 200);
+setInterval(escribirPlaceholder_t1, 75);
 setInterval(escribirPlaceholder_t2, 500);
 //
