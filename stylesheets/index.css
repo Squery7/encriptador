@@ -41,7 +41,7 @@ body {
 
     h1:hover {
         transition: 0.2s !important;
-        letter-spacing: 0.9em !important;
+        letter-spacing: 0.6em !important;
         color: gray !important;
     }
 }
