@@ -24,4 +24,14 @@ body {
     #main {
         flex-direction: column;
     }
+
+    #section {
+        height: 50% !important;
+        width: 100% !important;
+    }
+
+    #aside {
+        height: 50% !important;
+        width: 100% !important;
+    }
 }
