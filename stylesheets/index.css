@@ -34,4 +34,14 @@ body {
         height: 50% !important;
         width: 100% !important;
     }
+
+    h1{
+        font-size: 20px !important;
+    }
+
+    h1:hover {
+        transition: 0.2s !important;
+        letter-spacing: 0.9em !important;
+        color: gray !important;
+    }
 }
